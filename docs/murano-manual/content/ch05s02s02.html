@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
 <title>Configure</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Murano Project Documentation"/><link rel="up" href="ch05s02.html" title="Murano API Service"/><link rel="prev" href="ch05s02s01.html" title="Install"/><link rel="next" href="ch05s02s03.html" title="Run"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-3425";
+            var treeCookieId = "treeview-3420";
             var language = "en";
             var w = new Object();
             //Localization
@@ -94,12 +94,8 @@ key_file = /path/to/keyfile
 ca_file = /path/to/cafile
 
                         
-                    </pre><p> For more information how to configure SSL take a look at <a class="link" href="ch05s05.html" title="SSL configuration"> SSL configuration chapter </a></p></li><li class="listitem"><p>Edit one more configuration file:</p><pre class="programlisting">
-                        
-vi murano-api.conf
-                        
-                    </pre></li><li class="listitem"><p>Configure keystone auth_token in
-                        <span class="emphasis"><em>[filter:authtoken]</em></span>
+                    </pre><p> For more information how to configure SSL take a look at <a class="link" href="ch05s05.html" title="SSL configuration"> SSL configuration chapter </a></p></li><li class="listitem"><p>Configure keystone auth_token in
+                        <span class="emphasis"><em>[keystone_authtoken]</em></span>
                         section.
                         For more information see
                         <a class="link" href="http://docs.openstack.org/developer/keystone/configuringservices.html" target="_top">
@@ -107,15 +103,7 @@ vi murano-api.conf
                         </a>
                     </p><pre class="programlisting">
                         
-[pipeline:murano-api]
-pipeline = authtoken context apiv1app
-[app:apiv1app]
-paste.app_factory = muranoapi.api.v1.router:API.factory
-[filter:context]
-paste.filter_factory = muranoapi.api.middleware.context:ContextMiddleware.factory
-
-[filter:authtoken]
-paste.filter_factory = keystoneclient.middleware.auth_token:filter_factory
+[keystone_authtoken]
 auth_host = localhost
 auth_port = 35357
 auth_protocol = http

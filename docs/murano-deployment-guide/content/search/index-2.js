@@ -1,5 +1,4 @@
 //Auto generated index for searching.
-w["export"]="28";
 w["extra_opt"]="15";
 w["f17-x86_64-cfntool"]="15";
 w["fals"]="15,26";
@@ -210,4 +209,6 @@ w["program"]="21";
 w["project"]="17";
 w["properti"]="26";
 w["provid"]="11";
+w["proxi"]="21";
+w["ps"]="11";
 

@@ -211,4 +211,5 @@ w["evalcent"]="12";
 w["everyth"]="25";
 w["exampl"]="15";
 w["exit"]="11";
+w["export"]="28";
 
