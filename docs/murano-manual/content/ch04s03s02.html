@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
 <title>Accessing Object Model</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Murano Project Documentation"/><link rel="up" href="ch04s03.html" title="Workflows"/><link rel="prev" href="ch04s03s01.html" title="About workflows"/><link rel="next" href="ch04s03s03.html" title="Function context"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-3810";
+            var treeCookieId = "treeview-3813";
             var language = "en";
             var w = new Object();
             //Localization
@@ -74,7 +74,7 @@
    }
 ]
 </pre><p>
-<code class="code"> &lt;select path="::domain"&gt; </code> is "acme.loc" and <code class="code"> &lt;select path="/name"&gt; </code> is "MyDataCenter"
+<code class="code"> &lt;select path="::domain"&gt; </code> is "acme.loc" and <code class="code"> &lt;select path="/name" /&gt; </code> is "MyDataCenter"
             </p><p>
                 The path also supports drill-down notation:
                 <code class="code"> &lt;select path="::osImage.name"&gt; </code> is "ws-2012-std"
@@ -99,7 +99,7 @@
             </p><p>
                 <code class="code"> &lt;select-single path="JSONPath expression"/&gt; </code> is similar to <code class="code"> &lt;select-all/&gt; </code>, but returns only the first value matched by a JSONPath query or None.
             </p><p>
-                Object Model can also be modified using <code class="code"> &lt;set/&gt; </code>function. <code class="code"> &lt;set/&gt; </code>is very similar to <code class="code"> &lt;select/&gt; </code>with the only difference in that is writes value while <code class="code"> &lt;select/&gt; </code>reads it:
+                Object Model can also be modified using <code class="code"> &lt;set/&gt; </code>function. <code class="code"> &lt;set/&gt; </code>is very similar to <code class="code"> &lt;select/&gt; </code>with the only difference in that <code class="code"> &lt;select/&gt; </code> writes values while <code class="code"> &lt;select/&gt; </code>reads them:
 <code class="code"> &lt;set path="name"&gt;dc02&lt;/set&gt; </code>  changes unit name (eg. the object pointed by current cursor position) to "dc02".
 <code class="code"> &lt;set&gt; </code> can also introduce new attributes, event nested ones:
 <code class="code"> &lt;set path="newProperty"&gt;value&lt;/set&gt; </code> creates new attribute "newProperty" with given value,
