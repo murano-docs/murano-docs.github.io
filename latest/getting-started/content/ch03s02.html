@@ -41,7 +41,7 @@
             </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Create shared folder</p></li></ul></div><p>
             </p><pre class="programlisting">
 &gt;# mkdir -p /opt/samba/share
-&gt;#chown nobody:nogroup /opt/samba/share
+&gt;# chown nobody:nogroup /opt/samba/share
             </pre><p>
             </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Edit /etc/samba/smb.conf</p></li></ul></div><p>
             </p><pre class="programlisting">
@@ -61,7 +61,8 @@
             </pre><p>
             </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Restart services</p></li></ul></div><p>
             </p><pre class="programlisting">
-&gt;# restart smbd&gt;# restart nmdb
+&gt;# restart smbd
+&gt;# restart nmdb
             </pre><p>
             </p><p><span class="bold"><strong>Copy Prerequisites Into The Share</strong></span></p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Create folder structure</p></li></ul></div><pre class="programlisting">
 &gt;# mkdir -p “/opt/samba/share/Prerequisites/IIS”

@@ -1,5 +1,4 @@
 //Auto generated index for searching.
-w["primari"]="0,10";
 w["priv"]="18";
 w["problem"]="18";
 w["process"]="0,7,9,17";
