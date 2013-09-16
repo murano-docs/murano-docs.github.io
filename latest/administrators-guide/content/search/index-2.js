@@ -1,5 +1,6 @@
 //Auto generated index for searching.
-w["emtpi"]="27";
+w["edit"]="20";
+w["empti"]="27";
 w["enabl"]="5,9";
 w["enabled_servic"]="8";
 w["enough"]="6";
@@ -30,8 +31,7 @@ w["floating_rang"]="8";
 w["flop"]="3";
 w["floppi"]="3,4,9,27";
 w["folder"]="0,6,10,12,15,25,27";
-w["follow"]="11,18,20,23";
-w["followinf"]="27";
+w["follow"]="11,18,20,23,27";
 w["forc"]="3";
 w["force_config_dr"]="8";
 w["force_raw_imag"]="8";
@@ -58,7 +58,6 @@ w["h-api-cfn"]="8";
 w["h-api-cw"]="8";
 w["h-eng"]="8";
 w["hadrwar"]="14";
-w["hardvar"]="1";
 w["hardwar"]="1,5,12";
 w["hat"]="4,16";
 w["have"]="6,7";

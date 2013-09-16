@@ -32,7 +32,7 @@
                                         |
                                         <a accesskey="u" href="ch03s02.html">Up</a>
                                     |
-                                    <a accesskey="n" href="ch04.html">Next</a></td></tr></table></div></div><div id="content"><!----><div class="section" title="Floppy Image With Unattended File"><div class="titlepage"><div><div><h3 class="title"><a id="_create_floppy_drive_image"/>Floppy Image With Unattended File</h3></div></div></div><p>Run followinf commands as root:</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p> Create emtpy floppy image in your home folder </p><pre class="screen">&gt;# dd bs=512 count=2880 \
+                                    <a accesskey="n" href="ch04.html">Next</a></td></tr></table></div></div><div id="content"><!----><div class="section" title="Floppy Image With Unattended File"><div class="titlepage"><div><div><h3 class="title"><a id="_create_floppy_drive_image"/>Floppy Image With Unattended File</h3></div></div></div><p>Run following commands as root:</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p> Create empty floppy image in your home folder </p><pre class="screen">&gt;# dd bs=512 count=2880 \
    if=/dev/zero of=~/floppy.img \
    mkfs.msdos ~/floppy.img                        </pre></li><li class="listitem"><p> Mount the image to <span class="strong"><strong>/media/floppy</strong></span>
                         </p><pre class="screen">&gt;# mkdir /media/floppy mount -o loop \

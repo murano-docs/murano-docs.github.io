@@ -60,7 +60,6 @@ w["screen_logdir"]="8";
 w["script"]="0,6,15,20,25";
 w["section"]="13,14";
 w["secur"]="17";
-w["see"]="8";
 w["select"]="9";
 w["seq"]="6";
 w["server"]="4,6,9,12,17,20,23,25";
