@@ -123,11 +123,9 @@
                         Import the Windows Server 2012 image into Glance
                     </p></li></ul></div><pre class="programlisting">
 &gt;$ cd /opt/image-builder/share/images
-&gt;$ glance image-create --name ws-2012-std --disk-format qcow2  \
-                --container-type bare --file ws-2012-std.qcow2 \
-                --is-public true  \
-                --property murano_image_info='{"type":"ws-2012-std",\
-                    "title":"Windows Server 2012 Standard"}'
+&gt;$ glance image-create --name ws-2012-std --disk-format qcow2           \
+    --container-type bare --file ws-2012-std.qcow2 --is-public true     \
+    --property murano_image_info='{"type":"ws-2012-std", "title":"Windows Server 2012 Standard"}'
             </pre><div class="warning" title="Warning" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Warning</h3><p>
                 The value of the --property argument named
                 murano_image_info is a JSON string. Only double quotes are

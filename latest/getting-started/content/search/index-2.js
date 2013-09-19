@@ -1,4 +1,5 @@
 //Auto generated index for searching.
+w["etc"]="0,8,9,11,12,14,20";
 w["ethernet"]="6";
 w["evalu"]="4";
 w["everyth"]="1,5";
@@ -106,7 +107,6 @@ w["login"]="8,11,13,20";
 w["logon"]="0";
 w["lts"]="7";
 w["machin"]="3,7,17";
-w["mahin"]="3";
 w["make"]="4,13,14";
 w["manag"]="4,9";
 w["manipul"]="17";
@@ -213,5 +213,4 @@ w["prefer"]="5,7,13";
 w["prepar"]="1,2,4,9";
 w["prerequisit"]="2,6,9,20";
 w["press"]="0";
-w["prevent"]="16";
 
