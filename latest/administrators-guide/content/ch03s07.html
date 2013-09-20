@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
 <title>Upload Image Into Glance</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Murano Administrator's Guide"/><link rel="up" href="ch03.html" title="Chapter 3. Image Builder"/><link rel="prev" href="ch03s06.html" title="Build Windows Image (Manual Way)"/><link rel="next" href="ch04.html" title="Chapter 4. Troubleshooting"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-1258";
+            var treeCookieId = "treeview-1260";
             var language = "en";
             var w = new Object();
             //Localization
@@ -32,7 +32,7 @@
                                         |
                                         <a accesskey="u" href="ch03.html">Up</a>
                                     |
-                                    <a accesskey="n" href="ch04.html">Next</a></td></tr></table></div></div><div id="content"><!----><div class="section" title="Upload Image Into Glance"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="d0e1033"/>Upload Image Into Glance</h2></div></div></div><p>
+                                    <a accesskey="n" href="ch04.html">Next</a></td></tr></table></div></div><div id="content"><!----><div class="section" title="Upload Image Into Glance"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="d0e1035"/>Upload Image Into Glance</h2></div></div></div><p>
             Services deployed by Murano require specially prepared images, that can be created manually or via automated scripts.
             Please refer to corresponding chapters of this book to create image. After images are created they should be registered in Openstack Glance - image operation service.
         </p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>
@@ -55,7 +55,7 @@
                         </p></li><li class="listitem"><p> Replace <span class="bold"><strong>&lt;IMAGE_METADATA&gt;</strong></span> with the
                                 following property string
                                 </p><pre class="screen">
-murano_image_info='{"title": "Windows 2012 Core Edition","type": "ws-2012-core"}
+murano_image_info='{"title": "Windows 2012 Core Edition", "type": "ws-2012-core"}
 </pre><p>
                                 where </p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p> title - user-friendly description of the image
                                         </p></li><li class="listitem"><p> type - one of possible image types </p><div class="itemizedlist"><ul class="itemizedlist" type="square"><li class="listitem"><p> ws-2012-std - Windows Server 2012 Standart

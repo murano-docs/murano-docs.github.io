@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
 <title>Test Your Lab Host Performance</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Murano Administrator's Guide"/><link rel="up" href="ch01s01.html" title="Prepare A Lab For Murano"/><link rel="prev" href="ch01s01s01.html" title="Lab Requirements"/><link rel="next" href="ch01s01s03.html" title="Baseline Bata"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-1258";
+            var treeCookieId = "treeview-1260";
             var language = "en";
             var w = new Object();
             //Localization
@@ -49,7 +49,8 @@
                         </p></li><li class="listitem"><p>
                             Make 5 copies of Windows image file:
                         </p><pre class="screen">
-&gt;# for i in $(seq 5); do cp ws-2012-std.qcow2 ws-2012-std-$i.qcow2; done
+&gt;# for i in $(seq 5); do \
+   cp ws-2012-std.qcow2 ws-2012-std-$i.qcow2; done
 </pre></li><li class="listitem"><p>
                             Create script start-vm.sh in the folder with .qcow2 files:
                         </p><pre class="screen">
