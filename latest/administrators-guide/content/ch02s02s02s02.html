@@ -3,9 +3,9 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:exsl="http://exslt.org/common" xmlns:ng="http://docbook.org/docbook-ng"><head>
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
-<title>Configure</title><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Murano Administrator's Guide"/><link rel="up" href="ch02s02s02.html" title="Murano API Service"/><link rel="prev" href="ch02s02s02s01.html" title="Install"/><link rel="next" href="ch02s02s02s03.html" title="Run"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
+<title>Configure</title><link rel="stylesheet" type="text/css" href="../style/administrators-guide.css"/><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Murano Administrator's Guide"/><link rel="up" href="ch02s02s02.html" title="Murano API Service"/><link rel="prev" href="ch02s02s02s01.html" title="Install"/><link rel="next" href="ch02s02s02s03.html" title="Run"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-1919";
+            var treeCookieId = "treeview-1918";
             var language = "en";
             var w = new Object();
             //Localization
@@ -69,16 +69,11 @@ rabbitmqctl set_permissions -p muranovhost muranouser ".*" ".*" ".*"
                                     </code>
                                     not requires any changes.
                                 </p></li></ul></div><p>
-                    </p><p> For more information how to configure SSL take a look at <a class="link" href="ch02s02s05.html" title="SSL configuration"> SSL configuration chapter </a></p></li><li class="listitem"><a id="murano_api_endpoint"/><p>Register murano-api service in Openstack. </p><p>Note: you need to be authorized in Openstack to run this commands. To do this, you can run something like (having changed variables to appropriate values)</p><pre class="programlisting">
+                    </p><p> For more information how to configure SSL take a look at <a class="link" href="ch02s02s05.html" title="SSL configuration"> SSL configuration chapter </a></p></li><li class="listitem"><a id="murano_api_endpoint"/><p>Register murano-api service in Openstack. To do that perform the folowwing commands:</p><div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>You need to be authorized in Openstack to run this commands</p></div><pre class="programlisting">
                         
-source $(YOUR_OPENSTACK_DIR)/openrc $(LOGIN) $(PASSWORD)
-                        
-                    </pre><pre class="programlisting">
-                        
-keystone service-create --name muranoapi --type murano --description "Murano-Api Service"
+$ keystone service-create --name muranoapi --type murano --description "Murano-Api Service"
 
-keystone endpoint-create
-
+$ keystone endpoint-create
     --region RegionOne
     --service-id The ID field returned by the keystone service-create
     --publicurl http://x.x.x.x:8082 (where x.x.x.x - host ip where murano-api installed)

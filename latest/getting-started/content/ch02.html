@@ -44,7 +44,7 @@
             release-0.2 and so on. Branch master is the most recent between the releases, but not as stable as release-x.x branches.</p><p><span class="bold"><strong>Use Separate vHost in <a class="link" href="ch04s03s01.html" title="RabbitMQ Configuration Notes">RabbitMQ</a></strong></span></p><p>
             In general it is OK to configure Murano services to use the root (‘/’) vHost in RabbitMQ and use the same user credentials as OpenStack services use.
             However, we recommend to create a separate vHost with separate user for each Murano devbox. There are a few reasons for that:
-          </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>this prevents queue name collisions</p></li><li class="listitem"><p>this prevents message stealing from queues</p></li><li class="listitem"><p>this simplify debugging</p></li></ul></div><p>
+          </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>this prevents queue name collisions</p></li><li class="listitem"><p>this prevents message stealing from queues</p></li><li class="listitem"><p>this simplifies debugging</p></li></ul></div><p>
       </p><p>
           If you are planning to use only one devbox then you may stay with ‘/’
           vHost.
