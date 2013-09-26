@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
 <title>Install</title><link rel="stylesheet" type="text/css" href="../style/administrators-guide.css"/><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Murano Administrator's Guide"/><link rel="up" href="ch02s02s02.html" title="Murano API Service"/><link rel="prev" href="ch02s02s02.html" title="Murano API Service"/><link rel="next" href="ch02s02s02s02.html" title="Configure"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-1920";
+            var treeCookieId = "treeview-1925";
             var language = "en";
             var w = new Object();
             //Localization
@@ -42,20 +42,18 @@ sudo su -
 git clone https://github.com/stackforge/murano-api
                         
                     </pre><p>Stable version one of our <a class="link" href="http://murano-docs.github.io/latest/developers-guide/content/ch03s02.html" target="_top"> releases</a> can be checked by tag:</p><pre class="programlisting">
-                        
-git checkout 0.2
-                        
+cd murano-api &amp;&amp; git checkout 0.2
                     </pre></li><li class="listitem"><p>Switch to just created directory and then perform installation</p><p>
                         <span class="emphasis"><em>Ubuntu</em></span>
                     </p><pre class="programlisting">
                         
-sh murano-api/setup.sh install
+sh setup.sh install
                         
                     </pre><p>
                         <span class="emphasis"><em>CentOS</em></span>
                     </p><pre class="programlisting">
                         
-sh murano-api/setup-centos.sh install
+sh setup-centos.sh install
                        
                     </pre></li><li class="listitem"><p>Successful installation ends with message like this:</p><pre class="programlisting">
                         

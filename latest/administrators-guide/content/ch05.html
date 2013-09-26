@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
 <title>Chapter 5. Appendix</title><link rel="stylesheet" type="text/css" href="../style/administrators-guide.css"/><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Murano Administrator's Guide"/><link rel="up" href="index.html" title="Murano Administrator's Guide"/><link rel="prev" href="ch04.html" title="Chapter 4. Troubleshooting"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-1920";
+            var treeCookieId = "treeview-1925";
             var language = "en";
             var w = new Object();
             //Localization
@@ -56,10 +56,8 @@ deb http://archive.gplhost.com/debian grizzly-backports main
         <span class="emphasis"><em>CentOS 6.4 x86_64</em></span>
     </p><p>Installation steps:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Install minimal version of the system.</p></li><li class="listitem"><p>When prompted, mark OpenSSH Server to be installed</p></li><li class="listitem"><p>Login as root</p></li><li class="listitem"><p>Enable RedHat Openstack and Epel repository</p></li><li class="listitem"><p>Update system and add repositories and update OS
                 </p><pre class="programlisting">
-&gt;# yum install -y http://rdo.fedorapeople.org/openstack/\
-    openstack-grizzly/rdo-release-grizzly.rpm
-&gt;# yum install -y http://mirror.us.leaseweb.net/\
-                    epel/6/x86_64/epel-release-6-8.noarch.rpm
+&gt;# yum install -y http://rdo.fedorapeople.org/openstack/openstack-grizzly/rdo-release-grizzly.rpm
+&gt;# yum install -y http://mirror.us.leaseweb.net/epel/6/x86_64/epel-release-6-8.noarch.rpm
 &gt;# yum install -y mc unzip git make gcc python-setuptools python-pip upstart
 &gt;# yum update
 &gt;# yum upgrade

@@ -1,4 +1,5 @@
 //Auto generated index for searching.
+w["file_share_host"]="10";
 w["filter"]="3";
 w["find"]="0,20";
 w["finish"]="22,34";
@@ -318,7 +319,6 @@ w["prebuilt-jeos-imag"]="19";
 w["precise-upd"]="1";
 w["preconfigur"]="8";
 w["prefer"]="22";
-w["preform"]="3";
 w["prepar"]="13,16,17,21,22,26,32,36";
 w["prerequisit"]="9,10,11";
 w["prevent"]="33";
@@ -332,5 +332,4 @@ w["program"]="20";
 w["project"]="7,15,28";
 w["prompt"]="1";
 w["proper"]="1,2,17";
-w["properti"]="32";
 
