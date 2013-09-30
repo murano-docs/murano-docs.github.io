@@ -32,17 +32,12 @@
                                         |
                                         <a accesskey="u" href="ch02s02s03.html">Up</a>
                                     |
-                                    <a accesskey="n" href="ch02s02s03s03.html">Next</a></td></tr></table></div></div><div id="content"><!----><div class="section" title="Configure"><div class="titlepage"><div><div><h4 class="title"><a id="configure_conductor"/>Configure</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc" compact="compact"><li class="listitem"><p>Edit configuration file and take a look at inline comments:</p><pre class="programlisting">
+                                    <a accesskey="n" href="ch02s02s03s03.html">Next</a></td></tr></table></div></div><div id="content"><!----><div class="section" title="Configure"><div class="titlepage"><div><div><h4 class="title"><a id="configure_conductor"/>Configure</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc" compact="compact"><li class="listitem"><p>Copy example of the configuration file:</p><pre class="programlisting">
                         
 cd /etc/murano-conductor
 cp conductor.conf.sample conductor.conf
                         
-                    </pre></li><li class="listitem"><p>Change configuration file according to your environment.
-                    </p><pre class="programlisting">
-                        
-vi conductor.conf
-                        
-                    </pre><p>
+                    </pre></li><li class="listitem"><p>Configure <code class="filename">conductor.conf</code> file according to your environment.
                         </p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p><span class="emphasis"><em>[DEFAULT]</em></span>section is responsible for logging.
                                 </p></li><li class="listitem"><p><span class="emphasis"><em>[heat]</em></span>points where heat is running.
                                 </p></li><li class="listitem"><p><span class="emphasis"><em>[rabbitmq]</em></span>section points where your rabbitMQ installed and
