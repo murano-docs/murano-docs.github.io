@@ -39,7 +39,7 @@ sudo su -
                     </pre></li><li class="listitem"><p>Make sure that additional repositories are installed and your system is updated and upgraded.
                         Please check from with steps in the <a class="link" href="ch05.html" title="Chapter 5. Appendix">appendix</a>.
                     </p></li><li class="listitem"><p>If there is no openstack dashboard package in your environment install it now with all dependencies.
-                        Deleting an Ubuntu theme is an optional step but recommended.</p><div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+                        Deleting an Ubuntu theme is an optional step but recommended. In Centos open up the firewall ports for HTTP.</p><div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
                             Horizon installed by devstack is not capable for a murano installation.
                         </p></div><p>
                         <span class="emphasis"><em>Ubuntu</em></span>
@@ -51,7 +51,9 @@ dpkg --purge openstack-dashboard-ubuntu-theme
                     </p><pre class="programlisting">
 yum install make gcc memcached python-memcached \
 mod_wsgi openstack-dashboard python-netaddr.noarch
-                    </pre></li><li class="listitem"><p>Clone Murano Dashboard repository from the github:</p><pre class="programlisting">
+#&gt; lokkit -p http:tcp
+#&gt; lokkit -p https:tcp
+                        </pre></li><li class="listitem"><p>Clone Murano Dashboard repository from the github:</p><pre class="programlisting">
                         
 git clone https://github.com/stackforge/murano-dashboard
                         
