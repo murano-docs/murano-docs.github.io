@@ -1,4 +1,5 @@
 //Auto generated index for searching.
+w["eg"]="13,46";
 w["either"]="23,47";
 w["element"]="0,49,116";
 w["empti"]="1,7,14,49,82,113";
@@ -320,6 +321,4 @@ w["pair"]="47";
 w["paramet"]="0,13,28,35,47,49,104,108";
 w["parent"]="13,46,49";
 w["part"]="5,46,49,105";
-w["particip"]="23";
-w["pass"]="84";
 
