@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
 <title>Upload Image Into Glance</title><link rel="stylesheet" type="text/css" href="../style/administrators-guide.css"/><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Murano Administrator's Guide"/><link rel="up" href="ch03.html" title="Chapter 3. Image Builder"/><link rel="prev" href="ch03s06.html" title="Build Windows Image (Manual Way)"/><link rel="next" href="ch04.html" title="Chapter 4. Troubleshooting"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-1922";
+            var treeCookieId = "treeview-1888";
             var language = "en";
             var w = new Object();
             //Localization
@@ -32,7 +32,7 @@
                                         |
                                         <a accesskey="u" href="ch03.html">Up</a>
                                     |
-                                    <a accesskey="n" href="ch04.html">Next</a></td></tr></table></div></div><div id="content"><!----><div class="section" title="Upload Image Into Glance"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="d0e1602"/>Upload Image Into Glance</h2></div></div></div><p>
+                                    <a accesskey="n" href="ch04.html">Next</a></td></tr></table></div></div><div id="content"><!----><div class="section" title="Upload Image Into Glance"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="d0e1582"/>Upload Image Into Glance</h2></div></div></div><p>
             Services deployed by Murano require specially prepared images, that can be created manually or via automated scripts.
             Please refer to corresponding chapters of this book to create image. After images are created they should be registered in Openstack Glance - image operation service.
         </p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>
@@ -55,14 +55,9 @@
                         </p></li><li class="listitem"><p> Replace <span class="bold"><strong>&lt;IMAGE_METADATA&gt;</strong></span> with the
                                 following property string
                                 </p><pre class="screen">
-murano_image_info='{"title": "Windows 2012 Core Edition", "type": "ws-2012-core"}'
+murano_image_info='{"title": "Windows 2012 Standart Edition", "type": "windows.2012"}'
 </pre><p>
-                                where </p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p> title - user-friendly description of the image
-                                        </p></li><li class="listitem"><p> type - one of possible image types </p><div class="itemizedlist"><ul class="itemizedlist" type="square"><li class="listitem"><p> ws-2012-std - Windows Server 2012 Standart
-                                                  Edition </p></li><li class="listitem"><p> ws-2012-core - Windows 2012 Core Edition
-                                                  </p></li><li class="listitem"><p> ws-2008r2-std - Windows Server 2008R2
-                                                  Standart Edition </p></li><li class="listitem"><p> ws-2008r2 - Windows Server 2012R2 </p></li></ul></div><p>
-                                        </p></li></ul></div><p>
+                                where </p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p>title - user-friendly description of the image</p></li><li class="listitem"><p>type - is a image type, for example 'windows.2012'</p></li></ul></div><p>
                             </p></li></ul></div></li><li class="listitem"><p> To update metadata of the existing image run the command:</p><pre class="screen">
 &gt;$ glance image-update &lt;IMAGE-ID&gt; --property &lt;IMAGE_MATADATA&gt;
 </pre><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
@@ -70,7 +65,7 @@ murano_image_info='{"title": "Windows 2012 Core Edition", "type": "ws-2012-core"
                         </p></li><li class="listitem"><p> Replace <span class="bold"><strong>&lt;IMAGE_METADATA&gt;</strong></span> with
                                 murano_image_info property, e.g.
                                 </p><pre class="screen">
-murano_image_info='{"title": "Windows 2012 Core Edition", "type": "ws-2012-core"}'
+murano_image_info='{"title": "Windows 2012 Standart Edition", "type": "windows.2012"}'
 </pre><p>
                             </p></li></ul></div></li></ol></div><div class="warning" title="Warning" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Warning</h3><p>The value of the <span class="bold"><strong>--property</strong></span> argument named <span class="bold"><strong>murano_image_info</strong></span> is a JSON
                 string. Only double quotes are valid in JSON, so please type

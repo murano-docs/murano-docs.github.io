@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
 <title>Build Windows Image</title><link rel="stylesheet" type="text/css" href="../style/getting-started.css"/><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Murano Getting Started Guide"/><link rel="up" href="ch03.html" title="Chapter 3. Setup Lab Environment"/><link rel="prev" href="ch03s02.html" title="Prepare Shared Prerequisites"/><link rel="next" href="ch03s04.html" title="RabbitMQ Configuration Notes"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-988";
+            var treeCookieId = "treeview-968";
             var language = "en";
             var w = new Object();
             //Localization
@@ -125,7 +125,7 @@
 &gt;$ cd /opt/image-builder/share/images
 &gt;$ glance image-create --name ws-2012-std --disk-format qcow2           \
     --container-format bare --file ws-2012-std.qcow2 --is-public true     \
-    --property murano_image_info='{"type":"ws-2012-std", "title":"Windows Server 2012 Standard"}'
+    --property murano_image_info='{"type":"windows.2012", "title":"Windows Server 2012 Standard"}'
             </pre><div class="warning" title="Warning" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Warning</h3><p>
                 The value of the --property argument named
                 murano_image_info is a JSON string. Only double quotes are
