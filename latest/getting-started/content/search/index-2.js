@@ -1,5 +1,4 @@
 //Auto generated index for searching.
-w["everyth"]="1,14";
 w["exact"]="4";
 w["exampl"]="4";
 w["except"]="0";
@@ -212,4 +211,6 @@ w["publicurl"]="10";
 w["purpos"]="9";
 w["put"]="4,6";
 w["python"]="0,10";
+w["python-dev"]="3";
+w["python-devel"]="3";
 

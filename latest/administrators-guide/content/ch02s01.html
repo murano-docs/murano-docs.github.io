@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
 <title>Automatic Installation</title><link rel="stylesheet" type="text/css" href="../style/administrators-guide.css"/><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Murano Administrator's Guide"/><link rel="up" href="ch02.html" title="Chapter 2. Install Murano Components"/><link rel="prev" href="ch02.html" title="Chapter 2. Install Murano Components"/><link rel="next" href="ch02s02.html" title="Manual Installation"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-1888";
+            var treeCookieId = "treeview-1893";
             var language = "en";
             var w = new Object();
             //Localization
@@ -56,7 +56,9 @@ ADMIN_PASSWORD='admin_pass'
 RABBITMQ_LOGIN='muranouser'
 RABBITMQ_PASSWORD='murano'
 RABBITMQ_VHOST='muranovhost'
+RABBITMQ_PORT=''
 #RABBITMQ_HOST=''
+#RABBITMQ_HOST_ALT
 BRANCH_NAME='master'
 SSL_ENABLED='false'
 SSL_CA_FILE=''
@@ -65,7 +67,8 @@ SSL_KEY_FILE=''
                        </pre><p>
                 </p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p><span class="bold"><strong>LAB_HOST</strong></span> - IP or hostname of the lab.
                         This address/hostname should point to the host where Keystone is installed.</p></li><li class="listitem"><p><span class="bold"><strong>ADMIN_USER</strong></span> - OpenStack admin user.</p></li><li class="listitem"><p><span class="bold"><strong>ADMIN_PASSWORD</strong></span> - A  password for OpenStack admin user.</p></li><li class="listitem"><p><span class="bold"><strong>RABBITMQ_USER</strong></span> - User to connect to RabbitMQ host.</p></li><li class="listitem"><p><span class="bold"><strong>RABBITMQ_PASSWORD</strong></span> - Password for that user.</p></li><li class="listitem"><p><span class="bold"><strong>RABBITMQ_VHOST</strong></span> - vHost which will be used by Murano
-                            components. Provides additional layer of isolation from other devboxes.</p></li><li class="listitem"><p><span class="bold"><strong>RABBITMQ_HOST</strong></span> - (optional) IP address or hostname of
+                            components. Provides additional layer of isolation from other devboxes.</p></li><li class="listitem"><p><span class="bold"><strong>RABBITMQ_PORT</strong></span> - Port number for Murano components interconnection.
+                            It should be different from general rabbitMq port to provide SSL opportunity.</p></li><li class="listitem"><p><span class="bold"><strong>RABBITMQ_HOST</strong></span> - (optional) IP address or hostname of
                             the host where RabbitMQ is installed IF it is not the same host as LAB_HOST points to.</p></li><li class="listitem"><p><span class="bold"><strong>RABBITMQ_HOST_ALT</strong></span> - (optional) IP address or hostname of
                             the RabbitMQ host to connect from inside the Windows instance. In some cases the
                             addresses like LAB_HOST or RABBITMQ_HOST are inaccessible from instances, and they must use

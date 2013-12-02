@@ -1,6 +1,4 @@
 //Auto generated index for searching.
-w["python-dev"]="3";
-w["python-devel"]="3";
 w["python-pip"]="3";
 w["qcow2"]="4";
 w["queue"]="0,9";
@@ -9,6 +7,7 @@ w["quot"]="4";
 w["rabbitmq"]="0,1,2,3,9,11,14";
 w["rabbitmq_login"]="14";
 w["rabbitmq_password"]="14";
+w["rabbitmq_port"]="14";
 w["rabbitmq_vhost"]="14";
 w["rabbitmqctl"]="11";
 w["ram"]="3";
