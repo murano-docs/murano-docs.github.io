@@ -1,5 +1,4 @@
 //Auto generated index for searching.
-w["process"]="7,15,18,21,36";
 w["product"]="3";
 w["program"]="19";
 w["project"]="2,6,26";

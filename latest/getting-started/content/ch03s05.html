@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
 <title>Keystone Configuration Notes</title><link rel="stylesheet" type="text/css" href="../style/getting-started.css"/><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Murano Getting Started Guide"/><link rel="up" href="ch03.html" title="Chapter 3. Setup Lab Environment"/><link rel="prev" href="ch03s04.html" title="RabbitMQ Configuration Notes"/><link rel="next" href="ch04.html" title="Chapter 4. Setup Devbox"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-968";
+            var treeCookieId = "treeview-1002";
             var language = "en";
             var w = new Object();
             //Localization
@@ -32,16 +32,21 @@
                                         |
                                         <a accesskey="u" href="ch03.html">Up</a>
                                     |
-                                    <a accesskey="n" href="ch04.html">Next</a></td></tr></table></div></div><div id="content"><!----><div class="section" title="Keystone Configuration Notes"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="Keystone"/>Keystone Configuration Notes</h2></div></div></div><p>Service entry for murano-api and endpoint associated with it
+                                    <a accesskey="n" href="ch04.html">Next</a></td></tr></table></div></div><div id="content"><!----><div class="section" title="Keystone Configuration Notes"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="Keystone"/>Keystone Configuration Notes</h2></div></div></div><p>Service entry and endpoint associated with it for murano-api and murano-repository
                 could also be configured in the keystone. If there is no record
                 about murano-api in the keystone murano-dashboard would try to
                 reach murano-api service at localhost on the default murano-api
-                port 8082.
+                port 8082.(8084 in case of murano-repository)
             </p><p>How to add service record into the keystone using python keystone
                 client:
             </p><pre class="programlisting">
 &gt;# keystone service-create --name muranoapi --type murano \
                 --description "Murano-Api Service"
+            </pre><p>
+            And for murano-repository:
+                 </p><pre class="programlisting">
+&gt;# keystone service-create --name murano-repository --type murano-repository \
+                --description "Murano-Repository Service"
             </pre><p>
             This command returns UUID of the created service record, which
             should be used below.
