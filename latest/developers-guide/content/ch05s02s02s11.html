@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=7"/>
 <title>Create or modify service definition</title><link rel="stylesheet" type="text/css" href="../style/developers-guide.css"/><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Murano Developers Guide"/><link rel="up" href="ch05s02s02.html" title="Admin API"/><link rel="prev" href="ch05s02s02s10.html" title="Upload the complete service definition"/><link rel="next" href="ch05s02s02s12.html" title="Delete service from repository"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
             //The id for tree cookie
-            var treeCookieId = "treeview-5675";
+            var treeCookieId = "treeview-5681";
             var language = "en";
             var w = new Object();
             //Localization
@@ -36,10 +36,22 @@
 								json object If full_service_name is not specified new manifest 
 								file will be created. Otherwise existent service definition 
 								(manifest file) will be rewritten with the given data.</td></tr></tbody></table></div></div><br class="table-break"/><div class="table"><a id="d0e4802"/><p class="title"><strong>Table 5.36. Parameters</strong></p><div class="table-contents"><table summary="Parameters" border="1"><colgroup><col align="left" class="col1"/><col/><col align="left" class="col3"/></colgroup><thead><tr><th align="left">Parameter</th><th align="left">Description</th><th align="left">Required</th></tr></thead><tbody><tr><td align="left">full_service_name</td><td align="left">Identifies the type service (corresponds to 
-								full_service_name in manifest)</td><td align="left">false</td></tr></tbody></table></div></div><br class="table-break"/><div class="table"><a id="d0e4825"/><p class="title"><strong>Table 5.37. Error Response Codes</strong></p><div class="table-contents"><table summary="Error Response Codes" border="1"><colgroup><col align="left" class="col1"/><col align="left" class="col2"/></colgroup><thead><tr><th align="left">Code</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left">401</td><td align="left">User is not authorized to access this tenant 
-								resources</td></tr><tr><td align="left">404</td><td align="left">The full_service_name is unknown</td></tr><tr><td align="left">400</td><td align="left">If specified full_service_name is not equivalent to that 
-								parameter in json or there is no json data in request</td></tr></tbody></table></div></div><br class="table-break"/><p><span class="bold"><strong>Payload</strong></span></p><p>All files from archive are copied to corresponds location in 
-				Metadata Service</p><p><span class="bold"><strong>Returns</strong></span></p><p>
+								full_service_name in manifest)</td><td align="left">true</td></tr></tbody></table></div></div><br class="table-break"/><div class="table"><a id="d0e4825"/><p class="title"><strong>Table 5.37. Error Response Codes</strong></p><div class="table-contents"><table summary="Error Response Codes" border="1"><colgroup><col align="left" class="col1"/><col align="left" class="col2"/></colgroup><thead><tr><th align="left">Code</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left">401</td><td align="left">User is not authorized to access this tenant 
+								resources</td></tr><tr><td align="left">400</td><td align="left">If specified full_service_name is not equivalent to that 
+								parameter in json or there is no json data in request</td></tr></tbody></table></div></div><br class="table-break"/><p><span class="bold"><strong>Payload</strong></span></p><p>New manifest created in manifests directory.
+				Metadata Service</p><p><span class="bold"><strong>Example</strong></span></p><p>Here are json that will create new service manifest in Metadata Repository
+                    (json for service update looks the same - all data will be overwritten with the new one).
+                        Note that service_display_name is a required parameter and full_service_name should correspond
+                    to<code class="filename">full_service_name</code> given in URL or skipped.
+                </p><pre class="programlisting">
+{
+  "full_service_name": "new_service",
+  "service_display_name" : "Test Service",
+  "version": "0.1"
+}
+                </pre><p>
+                    All other parameters will be set to default parameters.
+                </p><p><span class="bold"><strong>Returns</strong></span></p><p>
 					In case of successful result this call returns a json:
 					</p><pre class="programlisting">
 {"result": "success"}
