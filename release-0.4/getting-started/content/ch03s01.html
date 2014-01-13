@@ -57,14 +57,14 @@
 &gt;# su stack
 &gt;$ cd
 &gt;$ git clone https://github.com/openstack-dev/devstack.git
-            </pre><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Checkout the <span class="bold"><strong>stable/grizzly</strong></span> branch</p></li></ul></div><pre class="programlisting">
+            </pre><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Checkout the <span class="bold"><strong>stable/havana</strong></span> branch</p></li></ul></div><pre class="programlisting">
 &gt;$ cd devstack
-&gt;$ git checkout stable/grizzly
+&gt;$ git checkout stable/havana
             </pre><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Get <code class="filename">localrc</code> and <code class="filename">local.sh</code> files</p></li></ul></div><pre class="programlisting">
-&gt;$ wget https://raw.github.com/stackforge/murano-deployment/release-0.2/
+&gt;$ wget https://raw.github.com/stackforge/murano-deployment/release-0.4/
                 getting-started/localrc
-&gt;$ wget https://raw.github.com/stackforge/murano-deployment/release-0.2/
-                getting-started/local.sh -O local.sh-O local.sh
+&gt;$ wget https://raw.github.com/stackforge/murano-deployment/release-0.4/
+                getting-started/local.sh
 &gt;$ chmod +x local.sh
             </pre><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Start <span class="emphasis"><em>devstack</em></span></p></li></ul></div><pre class="programlisting">
 &gt;$ ./stack.sh

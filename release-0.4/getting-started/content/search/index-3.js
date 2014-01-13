@@ -1,4 +1,5 @@
 //Auto generated index for searching.
+w["publicurl"]="10";
 w["publish"]="12";
 w["purpos"]="9";
 w["push-"]="12";
@@ -78,7 +79,6 @@ w["set_user_tag"]="11";
 w["setup"]="2,3,5,6,12";
 w["sever"]="12";
 w["sh"]="1,8,14";
-w["sh-o"]="8";
 w["share"]="2,3,4,6";
 w["sharedmanagementobject"]="6";
 w["should"]="0,3,4,6,9,10,11,12";

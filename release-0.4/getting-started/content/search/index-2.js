@@ -36,10 +36,10 @@ w["glanc"]="3,4";
 w["global"]="6";
 w["go"]="1";
 w["goal"]="12";
-w["grizzli"]="8";
 w["guest"]="3,6";
 w["hardwar"]="3,8";
 w["has"]="0,12";
+w["havana"]="8";
 w["have"]="0,3,8";
 w["hdd"]="3";
 w["heat"]="0,3,12";
@@ -223,5 +223,4 @@ w["project"]="12";
 w["properti"]="4";
 w["provid"]="1,12";
 w["provis"]="1";
-w["publicurl"]="10";
 
