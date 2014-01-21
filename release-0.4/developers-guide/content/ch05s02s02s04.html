@@ -38,9 +38,7 @@
 								heat.</td><td align="left">true</td></tr><tr><td align="left">full_directory_name</td><td align="left">Defines a name of a new directory. If any components of 
 								the path are missing, they will be created. If the directory 
 								already exists, nothing will happen.</td><td align="left">true</td></tr></tbody></table></div></div><br class="table-break"/><div class="table"><a id="d0e4240"/><p class="title"><strong>Table 5.18. Error Response Codes</strong></p><div class="table-contents"><table summary="Error Response Codes" border="1"><colgroup><col align="left" class="col1"/><col align="left" class="col2"/></colgroup><thead><tr><th align="left">Code</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left">401</td><td align="left">User is not authorized to access this tenant 
-								resources</td></tr><tr><td align="left">404</td><td align="left">The object_type is unknown</td></tr><tr><td align="left">403</td><td align="left">The object specified by full_path_to_object is directory 
-								and it is not empty or object_type is set to 
-								"manifest"</td></tr></tbody></table></div></div><br class="table-break"/><p><span class="bold"><strong>Payload</strong></span></p><p>None</p><p><span class="bold"><strong>Returns</strong></span></p><p>
+								resources</td></tr><tr><td align="left">404</td><td align="left">The object_type is unknown</td></tr><tr><td align="left">403</td><td align="left">The object_type is "manifest"</td></tr></tbody></table></div></div><br class="table-break"/><p><span class="bold"><strong>Payload</strong></span></p><p>None</p><p><span class="bold"><strong>Returns</strong></span></p><p>
 					In case of successful result this call returns a json:
 					</p><pre class="programlisting">
 {"result": "success"}

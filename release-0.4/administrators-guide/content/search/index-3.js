@@ -1,5 +1,4 @@
 //Auto generated index for searching.
-w["prevent"]="38";
 w["previous"]="23,36";
 w["privat"]="8,19";
 w["privileg"]="6,13,17,30";
@@ -186,6 +185,7 @@ w["start-sysprep"]="23";
 w["start-vm"]="16";
 w["state"]="1";
 w["status"]="1";
+w["std"]="36";
 w["step"]="16,18,23,30,36,37,41,43,44";
 w["stop"]="1";
 w["storag"]="23,25,44";
