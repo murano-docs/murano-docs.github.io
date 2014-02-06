@@ -1,5 +1,4 @@
 //Auto generated index for searching.
-w["field"]="3,14";
 w["file"]="1,3,6,8,10,11,14,16,17,18,19,20,29,36,37,39,40";
 w["file_share_host"]="10";
 w["fill"]="18";
@@ -133,7 +132,7 @@ w["iso"]="11,23,40,44";
 w["isol"]="10";
 w["it"]="16";
 w["json"]="36";
-w["just"]="3,19,30,45";
+w["just"]="3,8,19,30,45";
 w["keep"]="1,14,20";
 w["kept"]="14,29";
 w["keston"]="8";
@@ -189,6 +188,7 @@ w["localrc"]="20";
 w["locat"]="3,6,8,10,17,37,42";
 w["log"]="1,3,6,8,14,17,20";
 w["log_fil"]="8";
+w["log_local0"]="8";
 w["logfil"]="20";
 w["login"]="8,10,37,43";
 w["lokkit"]="30";
@@ -245,7 +245,7 @@ w["murano-ag"]="7,43";
 w["murano-api"]="1,3,14,17,19,29,35";
 w["murano-api-l"]="1";
 w["murano-api-past"]="3";
-w["murano-conductor"]="1,12,13,29";
+w["murano-conductor"]="1,8,12,13,29";
 w["murano-conductor-l"]="1";
 w["murano-dashboard"]="30";
 w["murano-deploy"]="10,23,39,40";
@@ -367,4 +367,5 @@ w["prerequisit"]="9,10,11";
 w["preserve_hostnam"]="43";
 w["press"]="10";
 w["prevent"]="38";
+w["previous"]="23,36";
 

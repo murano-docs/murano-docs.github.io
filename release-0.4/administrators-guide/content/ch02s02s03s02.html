@@ -40,29 +40,31 @@ cp conductor.conf.sample conductor.conf
                     </pre></li><li class="listitem"><p>Configure <code class="filename">conductor.conf</code> file according to your environment.
                     </p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p><span class="emphasis"><em>[DEFAULT]</em></span> section is responsible for logging.
                                 </p></li><li class="listitem"><p><span class="emphasis"><em>[keystone]</em></span> defines where kestone is located.
-                                </p></li><li class="listitem"><p><span class="emphasis"><em>[heat]</em></span>points where heat is running.
+                                </p></li><li class="listitem"><p><span class="emphasis"><em>[heat]</em></span> points where heat is running.
                                 </p></li><li class="listitem"><p><span class="emphasis"><em>[neutron]</em></span> sets up parameters for interconnection with neutron.
-                                </p></li><li class="listitem"><p><span class="emphasis"><em>[rabbitmq]</em></span>section points where your rabbitMQ installed and
+                                </p></li><li class="listitem"><p><span class="emphasis"><em>[rabbitmq]</em></span> section points where your rabbitMQ installed and
                                     configured.
                                 </p></li></ul></div><p>
                     </p><pre class="programlisting">
 [DEFAULT]
 
-# Path where log will be written
-log_file = /tmp/conductor.log
+# Set up logging. To use syslog just set use_syslog parameter value to 'True'
+log_file = /tmp/murano-conductor.log
+use_syslog = False
+syslog_log_facility=LOG_LOCAL0
 
 # Log verbosity
-debug=True
-verbose=True
+debug = True
+verbose = True
 
 # Provide directory with initialization scripts
-init_scripts_dir = etc/init-scripts
+init_scripts_dir = etc/murano/init-scripts
 
 # Provide directory with agent configs
-agent_config_dir = etc/agent-config
+agent_config_dir = etc/murano/agent-config
 
 # Directory for data cache, OS temp directory is used by default
-#data_dir = /tmp/muranoconductor-cache
+data_dir = /tmp/muranoconductor-cache
 
 # Provide url to Murano Metadata repository
 # Comment this line if you registered murano-metadata in keystone catalog
