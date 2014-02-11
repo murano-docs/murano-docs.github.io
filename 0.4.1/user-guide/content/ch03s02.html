@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:exsl="http://exslt.org/common" xmlns:ng="http://docbook.org/docbook-ng"><head>
+<meta http-equiv="X-UA-Compatible" content="IE=7"/>
+<title>Creating service prototype</title><link rel="stylesheet" type="text/css" href="../style/user-guide.css"/><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"/><link rel="home" href="index.html" title="Murano User Guide"/><link rel="up" href="ch03.html" title="Chapter 3. Environments"/><link rel="prev" href="ch03s01.html" title="Creating environment"/><link rel="next" href="ch03s02s01.html" title="Active Directory"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">
+            //The id for tree cookie
+            var treeCookieId = "treeview-1100";
+            var language = "en";
+            var w = new Object();
+            //Localization
+            txt_filesfound = 'Results';
+            txt_enter_at_least_1_char = "You must enter at least one character.";
+            txt_browser_not_supported = "Your browser is not supported. Use of Mozilla Firefox is recommended.";
+            txt_please_wait = "Please wait. Search in progress...";
+            txt_results_for = "Results for: ";
+        </script><style type="text/css">
+            input {
+            margin-bottom: 5px;
+            margin-top: 2px;
+            }
+
+            .folder {
+            display: block;
+            height: 22px;
+            padding-left: 20px;
+            background: transparent url(../common/jquery/treeview/images/folder.gif) 0 0px no-repeat;
+            }
+            
+        </style><link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/><link rel="stylesheet" type="text/css" href="../common/css/positioning.css"/><link rel="stylesheet" type="text/css" href="../common/jquery/theme-redmond/jquery-ui-1.8.2.custom.css"/><link rel="stylesheet" type="text/css" href="../common/jquery/treeview/jquery.treeview.css"/><script type="text/javascript" src="../common/jquery/jquery-1.4.2.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery-ui-1.8.2.custom.min.js"><!----></script><script type="text/javascript" src="../common/jquery/jquery.cookie.js"><!----></script><script type="text/javascript" src="../common/jquery/treeview/jquery.treeview.min.js"><!----></script><script type="text/javascript" src="search/htmlFileList.js"><!----></script><script type="text/javascript" src="search/htmlFileInfoList.js"><!----></script><script type="text/javascript" src="search/nwSearchFnt.js"><!----></script><script type="text/javascript" src="search/stemmers/en_stemmer.js"><!--//make this scalable to other languages as well.--></script><script type="text/javascript" src="search/index-1.js"><!----></script><script type="text/javascript" src="search/index-2.js"><!----></script><script type="text/javascript" src="search/index-3.js"><!----></script></head><body><div id="header"><img style="margin-right: 2px; height: 59px; padding-right: 25px; padding-top: 8px" align="right" src="../common/images/logo.png" alt="Company Logo"/><h1 align="center">Creating service prototype<br/>Chapter 3. Environments</h1><div id="navheader" align="right"><!----><table><tr><td style="height: 28px; width: 16px;"><a id="showHideButton" onclick="showHideToc();" class="pointLeft" title="Hide TOC tree">.
+                            </a></td><td><img src="../common/images/highlight-blue.gif" alt="H" height="25px" onclick="toggleHighlight()" id="showHideHighlight" style="cursor:pointer" title="Toggle search result highlighting"/></td><td><a accesskey="p" href="ch03s01.html">Prev</a>
+                                        |
+                                        <a accesskey="u" href="ch03.html">Up</a>
+                                    |
+                                    <a accesskey="n" href="ch03s02s01.html">Next</a></td></tr></table></div></div><div id="content"><!----><div class="section" title="Creating service prototype"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="d0e198"/>Creating service prototype</h2></div></div></div><p>
+            All services should be created in the context of Environment. After Environment is created, you need to create service prototypes
+            and then deploy the Environment. When deploy process is done instances
+            with your services will be spawned in Openstack.
+            To create a service prototype navigate to page with the list of environment services by
+            clicking on the environment name (or on the "Services" button) and then, click
+            the "Create Service" button.
+        </p><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="../images/service_btn.png" height="360"/></td></tr></table></div><p>
+            You have an opportunity to create one of the following services:
+        </p><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="../images/service_list.png" height="180"/></td></tr></table></div><p>
+            Once you choose service that you want to create click "Next" and fill the form.
+            Forms for each service are specific.
+            To see more information about filling the form for a specific service follow one of the link below:
+        </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+                    <span class="bold"><strong>
+                        <a class="link" href="ch03s02s04.html" title="ASP.NET Service">ASP.NET Service:</a>
+                    </strong></span>
+                    is a server-side Web application framework designed for Web
+                    development to produce dynamic Web pages. Service is able
+                    to install custom application onto one IIS Web Server. Murano installs
+                    all needed components and makes proper configuration.
+            </p></li><li class="listitem"><p>
+                    <span class="bold"><strong>
+                        <a class="link" href="ch03s02s05.html" title="ASP.NET Farm Service">ASP.NET Farm Service:</a>
+                    </strong></span>
+                    ASP.NET Farm Service installs a custom application on a
+                    load-balanced array of IIS servers.
+                </p></li><li class="listitem"><p>
+                    <span class="bold"><strong><a class="link" href="ch03s02s01.html" title="Active Directory">Active Directory:</a></strong></span>
+                    Active Directory is a directory service implemented by Microsoft for Windows domain networks.
+                    In one installation, in addition to primary Domain Controller,
+                    you can add optional count of secondary Domain Controllers.
+                    Any other services you are intending to create can be
+                    joined to that domain.
+            </p></li><li class="listitem"><p>
+                    <span class="bold"><strong>
+                        <a class="link" href="ch03s02s08.html" title="Linux Apache Service">Apache Service:</a></strong></span>
+                   Apache HTTP Server is a web server application notable for playing a key role in the initial growth of the World Wide Web.
+                   This service can install Apache with PHP module or without it.
+                </p></li><li class="listitem"><p>
+                    <span class="bold"><strong>
+                        <a class="link" href="">Demo Service:</a></strong></span>
+                    Installs test service that demonstrates how to Murano interconnects with Murano Demo Agent.
+                    For this service light-weight Linux Cirros image can be used.
+                </p></li><li class="listitem"><p>
+                    <span class="bold"><strong>
+                        <a class="link" href="ch03s02s02.html" title="Internet Information Service">Internet Information Service:</a></strong></span>
+                    IIS is a web server and a set of feature extension modules.
+                </p></li><li class="listitem"><p>
+                    <span class="bold"><strong>
+                        <a class="link" href="ch03s02s03.html" title="Internet Information Web Farm Service">Internet Information Web Farm Service:</a>
+                    </strong></span>
+                    Murano installs the Web Farm Framework on the controller server,
+                    configures the primary server and prepares the secondary servers.
+                    In addition load balancer is installed to monitor service statuses.
+                </p></li><li class="listitem"><p>
+                    <span class="bold"><strong><a class="link" href="ch03s02s09.html" title="Linux Telnet Service">Linux Telnet:</a></strong></span>
+                    Telnet - is a network protocol used to provide a bidirectional interactive
+                    text-oriented communication facility using a virtual terminal connection.
+                </p></li><li class="listitem"><p>
+                    <span class="bold"><strong><a class="link" href="ch03s02s06.html" title="MS SQL Service">MS SQL Service:</a></strong></span>
+                    Microsoft SQL Service is a relational database management system.
+                </p></li><li class="listitem"><p>
+                    <span class="bold"><strong>
+                        <a class="link" href="ch03s02s07.html" title="MS SQL Server Failover Cluster">MS SQL Server Failover Cluster:</a>
+                    </strong></span>
+                    Murano installs all needed components and configures your
+                    SQL Server Cluster the way you want.
+                </p></li></ul></div><p>
+            On the last step of creating service prototype you have opportunity to set
+            the hardware flavor of the instance which will be created -
+            and the image with the operating system, which will be installed on
+            the instance. Also you may select availability zone, if there are more
+            then one in your environment.
+        </p><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" cellspacing="0" cellpadding="0" width="100%"><tr><td><img src="../images/last_step.png" height="360"/></td></tr></table></div></div><script type="text/javascript" src="../common/main.js"><!----></script><div class="navfooter"><hr/><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch03s01.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch03.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch03s02s01.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top"> </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> </td></tr></table></div></div><div><div id="leftnavigation" style="padding-top:3px; background-color:white;"><div id="tabs"><ul><li><a href="#treeDiv"><em>Contents</em></a></li><li><a href="#searchDiv"><em>Search</em></a></li></ul><div id="treeDiv"><img src="../common/images/loading.gif" alt="loading table of contents..." id="tocLoading" style="display:block;"/><div id="ulTreeDiv" style="display:none"><ul id="tree" class="filetree"><li><span class="file"><a href="ch01.html">How can I use Murano Service?</a></span><ul><li><span class="file"><a href="ch01s01.html">Document change history</a></span></li></ul></li><li><span class="file"><a href="ch02.html">Images</a></span></li><li><span class="file"><a href="ch03.html">Environments</a></span><ul><li><span class="file"><a href="ch03s01.html">Creating environment</a></span></li><li id="webhelp-currentid"><span class="file"><a href="ch03s02.html">Creating service prototype</a></span><ul><li><span class="file"><a href="ch03s02s01.html">Active Directory</a></span></li><li><span class="file"><a href="ch03s02s02.html">Internet Information Service</a></span></li><li><span class="file"><a href="ch03s02s03.html">Internet Information Web Farm Service</a></span></li><li><span class="file"><a href="ch03s02s04.html">ASP.NET Service</a></span></li><li><span class="file"><a href="ch03s02s05.html">ASP.NET Farm Service</a></span></li><li><span class="file"><a href="ch03s02s06.html">MS SQL Service</a></span></li><li><span class="file"><a href="ch03s02s07.html">MS SQL Server Failover Cluster</a></span></li><li><span class="file"><a href="ch03s02s08.html">Linux Apache Service</a></span></li><li><span class="file"><a href="ch03s02s09.html">Linux Telnet Service</a></span></li></ul></li><li><span class="file"><a href="ch03s03.html">Deploying environment</a></span></li><li><span class="file"><a href="ch03s04.html">Working with deployed environment</a></span><ul><li><span class="file"><a href="ch03s04s01.html">Redeploying Murano Environment</a></span></li><li><span class="file"><a href="ch03s04s02.html">Deleting</a></span></li><li><span class="file"><a href="ch03s04s03.html">Browsing Murano Deployment</a></span></li><li><span class="file"><a href="ch03s04s04.html">Renaming Murano Environment</a></span></li></ul></li><li><span class="file"><a href="ch03s05.html">Troubleshooting</a></span></li></ul></li><li><span class="file"><a href="ch04.html">Metadata Repository</a></span><ul><li><span class="file"><a href="ch04s01.html">
+			Compose Service
+		</a></span></li><li><span class="file"><a href="ch04s02.html">Manage Files</a></span></li><li><span class="file"><a href="ch04s03.html">
+            Manage Service
+        </a></span></li></ul></li></ul></div></div><div id="searchDiv"><div id="search"><form onsubmit="Verifie(ditaSearch_Form);return false" name="ditaSearch_Form" class="searchForm"><fieldset class="searchFieldSet"><legend>Search</legend><center><input id="textToSearch" name="textToSearch" type="text" class="searchText"/> &nbsp; <input onclick="Verifie(ditaSearch_Form)" type="button" class="searchButton" value="Go" id="doSearch"/></center></fieldset></form></div><div id="searchResults"><center/></div></div></div></div></div></body></html>
