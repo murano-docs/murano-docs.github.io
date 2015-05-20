@@ -159,3 +159,33 @@ function toggleHighlight(){
         searchHighlight($.cookie('textToSearch'));
     }
 }
+
+$(document).ready(function() {
+    var warn = $("<div id='deprecation_warning'><h1>This documentation is outdated, please see <a href='http://murano.readthedocs.org'>murano.readthedocs.org</a></h1><div id='close_dw'>X</div></div>");
+    warn.css({
+        width: "100%",
+        'min-height': "35px",
+        'background-color': "yellow",
+        'border-width': '2px',
+        'border-color': 'black',
+        'border-style': 'solid',
+        color: "black",
+        top: '0',
+        position: 'fixed',
+        'z-index': '9999'
+
+    });
+    warn.find('#close_dw').css({
+        position: 'absolute',
+        top: '5px',
+        right: '10px',
+        'font-size': 14,
+        cursor: 'pointer'
+    });
+    $("body").prepend(warn);
+
+    $("#close_dw").click(function() {
+        $('#deprecation_warning').hide();
+    });
+});
+
